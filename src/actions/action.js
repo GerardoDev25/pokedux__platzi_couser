@@ -6,6 +6,11 @@ export const setPokemons = (payload) => ({
   payload,
 });
 
+export const setLoading = (payload) => ({
+  type: types.SET_LOADING,
+  payload,
+});
+
 export const getPokemonswithDetails =
   (pokemons = []) =>
   async (dispatch) => {
