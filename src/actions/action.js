@@ -11,6 +11,11 @@ export const setLoading = (payload) => ({
   payload,
 });
 
+export const setFavorite = (payload) => ({
+  type: types.SET_FAVORITE,
+  payload,
+});
+
 export const getPokemonswithDetails =
   (pokemons = []) =>
   async (dispatch) => {
