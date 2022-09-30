@@ -2,14 +2,14 @@ import { StarOutlined } from '@ant-design/icons';
 import { Card } from 'antd';
 
 
-const PokemonCard = ({name, url}) => {
+const PokemonCard = ({name, sprites}) => {
   return (
     <Card
       title={name}
       cover={
         <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
-          alt="Ditto"
+          src={sprites.back_default}
+          alt={name}
         />
       }
       extra={<StarOutlined />}
